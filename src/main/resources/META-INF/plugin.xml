@@ -24,6 +24,16 @@ A lightweight plugin for quickly switching editor tabs position.
   <li>支持按文件类型和名称排序，默认快捷键为Ctrl+3</li>
   <li>支持关闭所有非项目文件(从外部库打开的文件)，默认快捷键为Ctrl+4</li>
 </ul>
+<br/>
+<h2>Plugin for Quickly Switching Editor Tabs Position</h2>
+<ul>
+    <li>Supports switching Tabs from top to left display</li>
+    <li>Supports switching Tabs from left to top display</li>
+    <li>Supports switching positions in the extension menu (three dots) at the end of all tabs</li>
+    <li>Supports switching positions via shortcut keys (Ctrl+1 for top, Ctrl+2 for left)</li>
+    <li>Supports sorting by file type and name (Ctrl+3)</li>
+    <li>Supports closing all non-project files (Ctrl+4)</li>
+</ul>
 ]]></description>
 
 
