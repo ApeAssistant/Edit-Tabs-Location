@@ -13,9 +13,8 @@
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
     <description>
-        <![CDATA[
-<p>A lightweight plugin for quickly switching editor tabs position.</p>
-
+A lightweight plugin for quickly switching editor tabs position.
+    <![CDATA[
 <h2>快速切换编辑器Tabs位置的插件</h2>
 <ul>
     <li>支持将Tabs从顶部切换到左侧显示</li>
