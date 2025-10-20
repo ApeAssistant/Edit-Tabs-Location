@@ -1,0 +1,76 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>show.ywy.Edit-Tabs-Location</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-name -->
+    <name>Edit-Tabs-Location</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor url="https://ywy.show">猿助手</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
+    <description><![CDATA[
+<h2>快速切换编辑器Tabs位置的插件</h2>
+<ul>
+    <li>支持将Tabs从顶部切换到左侧显示</li>
+    <li>支持将Tabs从左侧切换到顶部显示</li>
+    <li>支持在所有标签末尾的扩展菜单内（三个点）切换位置</li>
+    <li>支持快捷键切换位置，默认快捷键为Ctrl+1切换到顶部， Ctrl+2切换到左侧。</li>
+    <li>支持按文件类型和名称排序，默认快捷键为Ctrl+3</li>
+    <li>支持关闭所有非项目文件(从外部库打开的文件)，默认快捷键为Ctrl+4</
+</ul>
+<br>
+<h2>Plugin for Quickly Switching Editor Tabs Position</h2>
+<ul>
+<li>Supports switching Tabs from top to left display</li>
+<li>Supports switching Tabs from left to top display</li>
+<li>Supports switching positions in the extension menu (three dots) at the end of all tabs</li>
+<li>Supports switching positions via shortcut keys, with the default shortcuts being Ctrl+1 to switch to top and Ctrl+2 to switch to left.</li>
+<li>Supports sorting by file type and name, with the default shortcut being Ctrl+3</li>
+<li>Supports closing all non-project files (files opened from external libraries), with the default shortcut being Ctrl+4</li>
+</ul>
+    ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+    <actions>
+        <action id="show.ywy.edittabslocation.ChangeTabsToLeft"
+                class="show.ywy.edittabslocation.ChangeTabsToLeft"
+                text="切换左侧显示tabs"
+                description="切换左侧显示tabs">
+            <add-to-group group-id="EditorTabsEntryPoint" anchor="first"/>
+            <keyboard-shortcut first-keystroke="ctrl 2" keymap="$default"/>
+            <keyboard-shortcut first-keystroke="meta 2" keymap="macOS System Shortcuts"/>
+        </action>
+        <action id="show.ywy.edittabslocation.ChangeTabsToTop" class="show.ywy.edittabslocation.ChangeTabsToTop"
+                text="切换顶部显示tabs" description="切换顶部显示tabs">
+            <add-to-group group-id="EditorTabsEntryPoint" anchor="first"/>
+            <keyboard-shortcut first-keystroke="ctrl 1" keymap="$default"/>
+            <keyboard-shortcut first-keystroke="meta 1" keymap="macOS System Shortcuts"/>
+        </action>
+        <action id="show.ywy.edittabslocation.SortByExtAndName" class="show.ywy.edittabslocation.SortByExtAndName"
+                text="按文件类型和名称排序" description="按文件类型和名称排序">
+            <add-to-group group-id="EditorTabsEntryPoint" anchor="first"/>
+            <keyboard-shortcut first-keystroke="ctrl 3" keymap="$default"/>
+            <keyboard-shortcut first-keystroke="meta 3" keymap="macOS System Shortcuts"/>
+        </action>
+        <action id="show.ywy.edittabslocation.CloseAllJarPackageFile"
+                class="show.ywy.edittabslocation.CloseAllJarPackageFile" text="关闭所有非项目文件"
+                description="关闭所有非项目文件">
+            <add-to-group group-id="EditorTabsEntryPoint" anchor="first"/>
+            <add-to-group group-id="EditorTabPopupMenu" anchor="first"/>
+            <keyboard-shortcut first-keystroke="ctrl 4" keymap="$default"/>
+            <keyboard-shortcut first-keystroke="meta 4" keymap="macOS System Shortcuts"/>
+        </action>
+    </actions>
+</idea-plugin>
