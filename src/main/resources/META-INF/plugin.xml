@@ -8,31 +8,38 @@
     <name>Edit-Tabs-Location</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor url="https://ywy.show">猿助手</vendor>
+    <vendor url="https://ywy.show">yuanzhushou</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
-    <description><![CDATA[
+    <description>
+        <![CDATA[
+<p>A lightweight plugin for quickly switching editor tabs position.</p>
+
 <h2>快速切换编辑器Tabs位置的插件</h2>
 <ul>
     <li>支持将Tabs从顶部切换到左侧显示</li>
     <li>支持将Tabs从左侧切换到顶部显示</li>
     <li>支持在所有标签末尾的扩展菜单内（三个点）切换位置</li>
-    <li>支持快捷键切换位置，默认快捷键为Ctrl+1切换到顶部， Ctrl+2切换到左侧。</li>
+    <li>支持快捷键切换位置，默认快捷键为Ctrl+1切换到顶部，Ctrl+2切换到左侧</li>
     <li>支持按文件类型和名称排序，默认快捷键为Ctrl+3</li>
-    <li>支持关闭所有非项目文件(从外部库打开的文件)，默认快捷键为Ctrl+4</
+    <li>支持关闭所有非项目文件(从外部库打开的文件)，默认快捷键为Ctrl+4</li>
 </ul>
-<br>
+
+<br/>
+
 <h2>Plugin for Quickly Switching Editor Tabs Position</h2>
 <ul>
-<li>Supports switching Tabs from top to left display</li>
-<li>Supports switching Tabs from left to top display</li>
-<li>Supports switching positions in the extension menu (three dots) at the end of all tabs</li>
-<li>Supports switching positions via shortcut keys, with the default shortcuts being Ctrl+1 to switch to top and Ctrl+2 to switch to left.</li>
-<li>Supports sorting by file type and name, with the default shortcut being Ctrl+3</li>
-<li>Supports closing all non-project files (files opened from external libraries), with the default shortcut being Ctrl+4</li>
+    <li>Supports switching Tabs from top to left display</li>
+    <li>Supports switching Tabs from left to top display</li>
+    <li>Supports switching positions in the extension menu (three dots) at the end of all tabs</li>
+    <li>Supports switching positions via shortcut keys (Ctrl+1 for top, Ctrl+2 for left)</li>
+    <li>Supports sorting by file type and name (Ctrl+3)</li>
+    <li>Supports closing all non-project files (Ctrl+4)</li>
 </ul>
-    ]]></description>
+]]>
+    </description>
+
 
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
