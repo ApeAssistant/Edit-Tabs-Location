@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "show.ywy"
-version = "1.0"
+version = "1.2"
 
 repositories {
     mavenCentral()
@@ -29,7 +29,7 @@ dependencies {
 intellijPlatform {
     pluginConfiguration {
         ideaVersion {
-            sinceBuild = "251"
+            sinceBuild = "231"
         }
 
         changeNotes = """
